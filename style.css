@@ -10,7 +10,7 @@
 
 body {
     font-family: Georgia, serif;
-    color: #ffcdd6;
+    color: #ff9191;
 }
 
 
@@ -163,7 +163,7 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(30px, 4vw, 50px);
+    font-size: clamp(35px, 5vw, 55px);
 
     font-weight: bold;
 
