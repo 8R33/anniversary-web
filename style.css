@@ -119,17 +119,31 @@ body {
 .date {
     font-family: 'Times New Roman', Times, serif;
 
-    font-size: 40px;
-
+    font-size: 36px;
     font-weight: bold;
-
-    letter-spacing: 4px;
-
-    margin-bottom: 20px;
-
-    opacity: 0.75;
+    letter-spacing: 3px;
 
     color: #850d0b;
+
+    padding: 10px 26px;
+
+    /* Soft pink-nude glass */
+    background: rgba(235, 190, 190, 0.70);
+
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+
+    /* Soft nude-pink border */
+    border: 1px solid rgba(255, 220, 220, 0.45);
+
+    border-radius: 50px;
+
+    box-shadow:
+        0 8px 25px rgba(120, 70, 70, 0.15);
+
+    margin-bottom: 25px;
+
+    opacity: 1;
 }
 
 
@@ -143,6 +157,10 @@ h1 {
     margin-bottom: 10px;
 }
 
+.normal-text {
+    font-style: normal;
+    font-weight: bold;
+}
 
 h2 {
     font-size: clamp(30px, 4vw, 50px);
@@ -152,7 +170,10 @@ h2 {
     font-style: italic;
 
     margin-bottom: 35px;
+
+    
 }
+
 
 
 /* ------------------------------
