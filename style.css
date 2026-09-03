@@ -783,7 +783,8 @@ h2 {
    MOBILE — MATCH DESKTOP DESIGN
 ================================================== */
 
-@media (max-width: 700px) and (min-height: 100px) {
+@media (max-width: 500svh) {
+
 
     .year-page {
         min-height: 100svh;
@@ -835,7 +836,7 @@ h2 {
     .year-text {
         top: 40px;
 
-        left: calc(40% + 105px);
+        left: calc(40% + 115px);
 
         width: 150px;
 
@@ -925,7 +926,7 @@ h2 {
         text-align: center;
 
         z-index: 5;
-        transform: translateX(-170px);
+        transform: translateX(-185px);
     }
 
 
@@ -961,7 +962,7 @@ h2 {
     .continue-button {
         position: relative;
 
-        right: 20px;
+        right: auto;
         bottom: 42vh;
     
         margin-top: 22px;
@@ -971,6 +972,7 @@ h2 {
         font-size: 16px;
 
         align-self: flex-end;
+        transform: translateX(95px);
     }
 
 
