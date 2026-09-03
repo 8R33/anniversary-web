@@ -577,7 +577,7 @@ h2 {
 
 .love-section {
     position: absolute;
-    left: 9%;
+    left: 10%;
     top: 30%;
     width: 350px;
 
@@ -594,7 +594,7 @@ h2 {
 ================================================== */
 
 .infinity-sticker {
-    width: 300px;
+    width: 280px;
     height: auto;
 
     display: block;
@@ -932,7 +932,7 @@ h2 {
 
         width: 100%;
 
-        margin-top: -75px;
+        margin-top: -95px;
 
         display: flex;
         flex-direction: column;
