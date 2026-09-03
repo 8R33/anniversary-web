@@ -463,7 +463,7 @@ h2 {
        Place YEAR beside the 1
     */
 
-    top: 70px;
+    top: 50px;
 
     left: calc(47% + 105px);
 
@@ -481,6 +481,8 @@ h2 {
     align-items: center;
 
     font-family: 'Times New Roman', Times, serif;
+
+    font-weight: bold;
 
     font-size: 58px;
 
@@ -524,6 +526,7 @@ h2 {
     font-family: cursive;
     font-size: 28px;
     font-style: italic;
+    font-weight: bold;
     color: #0c0c0c;
 
     opacity: 0;
@@ -535,8 +538,9 @@ h2 {
 
 .to-us {
     font-family: Times, serif;
-    font-size: 30px;
+    font-size: 34px;
     font-style: italic;
+    font-weight: bold;
     color: #e61531;
     margin-top: 10px;
     margin-bottom: 6px;
@@ -574,9 +578,9 @@ h2 {
 
 .love-section {
     position: absolute;
-    left: 15%;
+    left: 10%;
     top: 30%;
-    width: 300px;
+    width: 350px;
 
     display: flex;
     flex-direction: column;
@@ -609,7 +613,7 @@ h2 {
 .love-text h2 {
     font-family: cursive;
     font-size: 35px;
-    font-weight: normal;
+    font-weight: bold;
 
     color: #000000;
 
@@ -625,6 +629,7 @@ h2 {
     font-family: cursive;
     font-size: 27px;
     font-style: italic;
+    font-weight: bold;
 
     color: #e61531;
 
@@ -650,7 +655,7 @@ h2 {
     margin-top: 20px;
     position: absolute;
     right: 5%;
-    bottom: 25%;
+    bottom: 20%;
 
     z-index: 5;
 
@@ -776,144 +781,216 @@ h2 {
 
 
 /* ==================================================
-   MOBILE
+   MOBILE — MATCH DESKTOP DESIGN
 ================================================== */
 
 @media (max-width: 700px) {
 
     .year-page {
         min-height: 100svh;
+        width: 100%;
 
-        padding:
-            20px
-            15px
-            30px;
+        padding: 20px 12px 35px;
 
         overflow-x: hidden;
+        overflow-y: auto;
     }
 
 
-    /* ------------------------------
-       SMALLER NUMBER 1
-    ------------------------------ */
+    /* ==================================================
+       NUMBER 1
+    ================================================== */
 
     .one-section {
-
         width: 245px;
         height: 345px;
 
-        margin-right: 70px;
+        margin-right: 65px;
+        flex-shrink: 0;
     }
 
+
+    /* ==================================================
+       PHOTO COLLAGE
+    ================================================== */
 
     .photo-one {
+        width: 100%;
+        height: 100%;
 
-        gap: 2px;
+        gap: 1px;
+    }
+
+    .photo-one img {
+        border-width: 1px;
+
+        box-shadow:
+            0 2px 6px rgba(70, 40, 30, 0.15);
     }
 
 
-    /* ------------------------------
-       SMALLER STICKER
-    ------------------------------ */
-
-    .infinity.sticker {
-
-        width: 55px;
-
-        top: -10px;
-
-        right: -48px;
-    }
-
-
-    /* ------------------------------
-       YEAR
-    ------------------------------ */
+    /* ==================================================
+       YEAR — RIGHT OF THE 1
+    ================================================== */
 
     .year-text {
+        top: 40px;
 
-        top: 65px;
+        left: calc(50% + 48px);
 
-        left: calc(50% + 65px);
+        width: 75px;
+
+        text-align: center;
     }
 
 
     .year-letters {
+        font-size: 30px;
 
-        font-size: 28px;
+        line-height: 1.08;
 
-        line-height: 1.15;
+        letter-spacing: 1px;
     }
 
 
     .with-you {
-
-        font-size: 17px;
+        font-size: 16px;
 
         margin-top: 5px;
+        margin-bottom: 0;
     }
 
-
-    /* ------------------------------
-       MESSAGE
-    ------------------------------ */
-
-    .anniversary-message {
-
-        margin-top: 10px;
-    }
-
-
+    
     .to-us {
+        font-size: 26px;
 
-        font-size: 27px;
-
-        margin-bottom: 8px;
+        margin-top: 5px;
+        margin-bottom: 7px;
     }
 
+
+    /* ==================================================
+       PINK LINE
+    ================================================== */
 
     .pink-line {
-
-        gap: 7px;
+        gap: 6px;
 
         margin-bottom: 10px;
     }
 
 
     .pink-line span {
-
-        width: 65px;
+        width: 50px;
 
         height: 2px;
     }
 
 
     .pink-line b {
-
-        font-size: 16px;
+        font-size: 14px;
     }
 
 
-    .anniversary-message h2 {
+    /* ==================================================
+       INFINITY STICKER
+    ================================================== */
 
+    .infinity-sticker {
+        width: 200px;
+
+        height: auto;
+
+        margin-bottom: 4px;
+    }
+
+
+    /* ==================================================
+       LOVE SECTION
+    ================================================== */
+
+    .love-section {
+        position: relative;
+
+        left: auto;
+        top: auto;
+
+        width: 100%;
+
+        margin-top: 18px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+
+        z-index: 5;
+    }
+
+
+    /* ==================================================
+       BRIDGET & MUAYAD
+    ================================================== */
+
+    .love-text h2 {
         font-size: 30px;
+
+        line-height: 1.15;
+
+        margin: 0;
     }
 
 
-    .forever {
+    /* ==================================================
+       FOREVER
+    ================================================== */
 
-        font-size: 27px;
+    .love-text .forever {
+        font-size: 24px;
+
+        margin-top: 2px;
     }
 
 
-    /* ------------------------------
-       CONTINUE
-    ------------------------------ */
+
+    /* ==================================================
+       CONTINUE BUTTON
+    ================================================== */
 
     .continue-button {
+        position: relative;
 
-        margin-top: 15px;
+        right: 5;
+        bottom: 5;
 
-        font-size: 14px;
+        margin-top: 22px;
+
+        padding: 13px 24px;
+
+        font-size: 16px;
+
+        align-self: center;
+    }
+
+
+    /* ==================================================
+       ANIMATIONS
+    ================================================== */
+
+    .year-letters span:nth-child(1) {
+        animation-delay: 0.8s;
+    }
+
+    .year-letters span:nth-child(2) {
+        animation-delay: 0.9s;
+    }
+
+    .year-letters span:nth-child(3) {
+        animation-delay: 1s;
+    }
+
+    .year-letters span:nth-child(4) {
+        animation-delay: 1.1s;
     }
 }
