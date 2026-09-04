@@ -2239,7 +2239,7 @@ h2 {
 .letter-ending {
     text-align: right;
 
-    margin-top: 15px !important;
+    margin-top: 2px !important;
 
     font-family: cursive;
 
@@ -2258,13 +2258,13 @@ h2 {
 .letter-sticker {
     position: absolute;
 
-    width: 115px;
+    width: 100px;
 
     height: auto;
 
-    right: 0px;
+    right: 13px;
 
-    bottom: -75px;
+    bottom: -65px;
 
     z-index: 10;
 
