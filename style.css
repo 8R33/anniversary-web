@@ -1640,13 +1640,15 @@ h2 {
 ================================================== */
 
 .person-photos {
-    width: 80%;
+    width: 100%;
 
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
 
-    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    align-items: center;
 }
 
 
@@ -1913,7 +1915,6 @@ h2 {
 }
 
 .page4-next span {
-    
     margin-left: 5px;
 }
 
@@ -1972,7 +1973,13 @@ h2 {
     =============================== */
 
     .person-photos {
-        gap: 8px;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+
+        gap: 10px;
+
     }
 
     .photo-frame {
@@ -2056,5 +2063,3 @@ h2 {
         filter: blur(50px);
     }
 }
-
-
