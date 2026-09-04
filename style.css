@@ -1640,15 +1640,13 @@ h2 {
 ================================================== */
 
 .person-photos {
-    width: 100%;
+    width: 80%;
 
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
 
-    grid-template-columns: 1fr 1fr;
-
-    gap: 15px;
-
-    align-items: center;
+    gap: 10px;
 }
 
 
@@ -2058,3 +2056,5 @@ h2 {
         filter: blur(50px);
     }
 }
+
+
