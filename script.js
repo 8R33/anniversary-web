@@ -73,3 +73,12 @@ function goToPage4() {
         "page4.html";
 
 }
+
+/* ==================================================
+   PAGE 4 — NO BUTTON
+================================================== */
+
+
+function goToPage5() {
+    window.location.href = "page5.html";
+}
