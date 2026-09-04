@@ -190,10 +190,12 @@ h2 {
     padding: 15px 28px;
 
     border-radius: 50px;
-    text-decoration: none;
+
     font-size: 18px;
 
-    cursor: pointer; /* removes underline */
+    text-decoration: none; /* removes underline */
+
+    cursor: pointer;
 
     transition:
         transform 0.3s ease,
@@ -650,7 +652,7 @@ h2 {
    CONTINUE
 ================================================== */
 
-.next-button {
+.continue-button {
     margin-top: 20px;
     position: absolute;
     right: 5%;
@@ -667,6 +669,7 @@ h2 {
     font-size: 20px;
 
     text-decoration: none; /* removes underline */
+
     cursor: pointer;
     opacity: 0;
     animation:
@@ -1046,4 +1049,3 @@ h2 {
     }
 
 }
-
