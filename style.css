@@ -1050,3 +1050,433 @@ h2 {
 
 }
 
+/*---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+
+/* ==================================================
+   PAGE 3 — FROSTED GLASS
+================================================== */
+
+.page3 {
+
+    min-height: 100svh;
+    width: 100%;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(255, 239, 170, 0.9),
+            transparent 45%
+        ),
+
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(205, 183, 255, 0.75),
+            transparent 45%
+        ),
+
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(255, 220, 150, 0.7),
+            transparent 50%
+        ),
+
+        linear-gradient(
+            135deg,
+            #f8e7a8,
+            #e7d8f7,
+            #cdb8ed
+        );
+
+}
+
+
+/* ==================================================
+   FROSTED GLASS LAYER
+================================================== */
+
+.frosted-background {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.28),
+            rgba(255, 255, 255, 0.08)
+        );
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+/* ==================================================
+   BACKGROUND GLOWING CIRCLES
+================================================== */
+
+.glow {
+
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    border-radius: 50%;
+
+    filter: blur(60px);
+
+    opacity: 0.45;
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+
+.glow-yellow {
+
+    background: #fff0a8;
+
+    top: -80px;
+    left: -80px;
+}
+
+
+.glow-purple {
+
+    background: #c9a8ff;
+
+    right: -80px;
+    bottom: -80px;
+}
+
+
+/* ==================================================
+   QUESTION CARD
+================================================== */
+
+.question-card {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: min(90%, 500px);
+
+    padding: 45px 30px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.22);
+
+    border: 1px solid rgba(255, 255, 255, 0.45);
+
+    border-radius: 30px;
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 15px 40px rgba(90, 60, 120, 0.15);
+
+}
+
+
+/* ==================================================
+   HEART
+================================================== */
+
+.question-heart {
+
+    font-size: 52px;
+
+    margin-bottom: 20px;
+
+    animation:
+        heartFloat 2s ease-in-out infinite;
+
+}
+
+
+/* ==================================================
+   MAIN QUESTION
+================================================== */
+
+.question-card h1 {
+
+    margin: 0;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    font-size:
+        clamp(32px, 6vw, 48px);
+
+    font-weight: bold;
+
+    line-height: 1.1;
+
+    color: #070707;
+
+}
+
+.question-card h2 {
+
+    margin: 0;
+
+    font-family:'Georgia', Times,serif;
+
+    font-size:
+        clamp(32px, 6vw, 48px);
+
+    font-weight: bold;
+
+    line-height: 1.1;
+
+    color: #ff5024e8;
+
+}
+
+
+/* ==================================================
+   PLAYFUL TEXT
+================================================== */
+
+.playful-text {
+
+    margin:
+        12px 0 30px;
+
+    font-family: cursive;
+
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+
+    color: #01a19c;
+
+}
+
+
+/* ==================================================
+   BUTTON CONTAINER
+================================================== */
+
+.answer-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 18px;
+
+    position: relative;
+
+}
+
+
+/* ==================================================
+   BOTH BUTTONS
+================================================== */
+
+.yes-button,
+.no-button {
+
+    border: none;
+
+    padding: 13px 28px;
+
+    border-radius: 50px;
+
+    font-size: 18px;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+}
+
+
+/* ==================================================
+   YES BUTTON
+================================================== */
+
+.yes-button {
+
+    background: #850d0b;
+
+    color: white;
+
+    box-shadow:
+        0 6px 15px
+        rgba(133, 13, 11, 0.25);
+
+}
+
+
+.yes-button:hover {
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 8px 20px
+        rgba(133, 13, 11, 0.35);
+
+}
+
+
+/* ==================================================
+   NO BUTTON
+================================================== */
+
+.no-button {
+
+    background:
+        rgba(255, 255, 255, 0.55);
+
+    color: #351c1c;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.7);
+
+}
+
+
+.no-button:hover {
+
+    transform: scale(0.95);
+
+}
+
+
+/* ==================================================
+   HEART ANIMATION
+================================================== */
+
+@keyframes heartFloat {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-7px);
+
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 700px) {
+
+    .page3 {
+
+        min-height: 100svh;
+
+        padding:
+            20px 15px;
+
+        overflow: hidden;
+
+    }
+
+
+    .question-card {
+
+        width: 90%;
+
+        padding:
+            35px 20px;
+
+        border-radius: 25px;
+
+    }
+
+
+    .question-heart {
+
+        font-size: 38px;
+
+    }
+
+
+    .question-card h1 {
+
+        font-size:
+            clamp(28px, 8vw, 38px);
+
+    }
+
+
+    .playful-text {
+
+        font-size: 20px;
+
+        margin:
+            10px 0 25px;
+
+    }
+
+
+    .answer-buttons {
+
+        gap: 24px;
+
+    }
+
+
+    .yes-button,
+    .no-button {
+
+        padding:
+            12px 22px;
+
+        font-size: 16px;
+
+    }
+
+
+    .glow {
+
+        width: 200px;
+
+        height: 200px;
+
+        filter: blur(45px);
+
+    }
+
+}
