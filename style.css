@@ -787,7 +787,7 @@ h2 {
    MOBILE — RESPONSIVE COMPOSITION
 ================================================== */
 
-@media (max-width: 1000px) and (max-height: 750px) {
+@media (max-width: 1200px) and (max-height: 1000px) {
 
     .year-page {
     min-height: 100svh;
