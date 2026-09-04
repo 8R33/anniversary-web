@@ -2102,8 +2102,8 @@ h2 {
 
     background-image:
         linear-gradient(
-            rgba(45, 15, 25, 0.45),
-            rgba(45, 15, 25, 0.55)
+            rgba(228, 160, 182, 0.068),
+            rgba(223, 109, 147, 0.404)
         ),
         url("assets/images/Photo13.jpg");
 
@@ -2427,7 +2427,7 @@ h2 {
     .letter-sticker {
         width: 90px;
 
-        right: 10px;
+        right: 8px;
 
         bottom: -60px;
     }
