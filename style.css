@@ -2063,3 +2063,393 @@ h2 {
         filter: blur(50px);
     }
 }
+
+
+/*-----------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------*/
+
+
+/* ==================================================
+   PAGE 5 — LOVE LETTER
+================================================== */
+
+.page5 {
+    min-height: 100svh;
+    width: 100%;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    padding: 40px 20px;
+
+    background: #3c1822;
+}
+
+
+/* ==================================================
+   BACKGROUND PHOTO
+================================================== */
+
+.letter-background {
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(45, 15, 25, 0.45),
+            rgba(45, 15, 25, 0.55)
+        ),
+        url("assets/images/Photo13.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    z-index: 0;
+
+    transform: scale(1.02);
+}
+
+
+/* ==================================================
+   LOVE LETTER CARD
+================================================== */
+
+.letter-card {
+    position: relative;
+
+    z-index: 5;
+
+    width: min(90%, 650px);
+
+    max-height: 90svh;
+
+    padding: 45px 50px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(124, 71, 84, 0.247),
+            rgba(85, 34, 48, 0.62)
+        );
+
+    border:
+        1px solid
+        rgba(255, 236, 239, 0.35);
+
+    border-radius: 28px;
+
+    backdrop-filter: blur(8px);
+
+    -webkit-backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 20px 60px rgba(30, 5, 15, 0.35);
+}
+
+
+/* ==================================================
+   LETTER CONTENT
+================================================== */
+
+.letter-content {
+    position: relative;
+
+    text-align: center;
+
+    color: #fff4f4;
+}
+
+
+/* ==================================================
+   LETTER OPENING
+================================================== */
+
+.letter-opening {
+    margin: 0 0 8px;
+
+    font-family: cursive;
+
+    font-size: 25px;
+
+    font-style: italic;
+
+    color: #ffd6df;
+}
+
+
+/* ==================================================
+   LETTER TITLE
+================================================== */
+
+.letter-content h1 {
+    margin: 0 0 5px;
+
+    font-family:
+        "Times New Roman",Times,serif;
+
+    font-size:
+        clamp(32px, 5vw, 46px);
+
+    line-height: 1.1;
+
+    color: #fff;
+
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   LETTER TEXT
+================================================== */
+
+.letter-text {
+    font-family:
+        Georgia,
+        "Times New Roman",serif;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    text-align: left;
+
+    color: #fff4f4;
+}
+
+.letter-text p {
+    margin: 0 0 10px;
+}
+
+
+/* ==================================================
+   LETTER ENDING
+================================================== */
+
+.letter-ending {
+    text-align: right;
+
+    margin-top: 15px !important;
+
+    font-family: cursive;
+
+    font-size: 20px;
+
+    font-style: italic;
+
+    color: #ffd0dc;
+}
+
+
+/* ==================================================
+   STICKER
+================================================== */
+
+.letter-sticker {
+    position: absolute;
+
+    width: 115px;
+
+    height: auto;
+
+    right: 0px;
+
+    bottom: -75px;
+
+    z-index: 10;
+
+    transform: rotate(8deg);
+
+    filter:
+        drop-shadow(
+            0 5px 8px rgba(0, 0, 0, 0.2)
+        );
+}
+
+
+/* ==================================================
+   NEXT BUTTON
+================================================== */
+
+.page5-next {
+    position: absolute;
+
+    z-index: 10;
+
+    right: 5%;
+
+    bottom: 7%;
+
+    border: none;
+
+    background: #f2a9bb;
+
+    color: #541c2a;
+
+    padding: 13px 27px;
+
+    border-radius: 50px;
+
+    font-family: inherit;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px
+        rgba(30, 5, 15, 0.25);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.page5-next span {
+    margin-left: 5px;
+
+    color: #cc1212;
+}
+
+.page5-next:hover {
+    transform: scale(1.07);
+
+    box-shadow:
+        0 10px 25px
+        rgba(30, 5, 15, 0.35);
+}
+
+
+/* ==================================================
+   MOBILE — PAGE 5
+================================================== */
+
+@media (max-width: 700px) {
+
+    .page5 {
+        min-height: 100svh;
+
+        padding: 25px 15px 85px;
+
+        overflow-y: auto;
+    }
+
+
+    /* ==============================
+       BACKGROUND
+    =============================== */
+
+    .letter-background {
+        background-position: center;
+
+        transform: scale(1.04);
+    }
+
+
+    /* ==============================
+       LETTER CARD
+    =============================== */
+
+    .letter-card {
+        width: 92%;
+
+        max-height: none;
+
+        padding: 32px 24px 50px;
+
+        border-radius: 23px;
+    }
+
+
+    /* ==============================
+       LETTER OPENING
+    =============================== */
+
+    .letter-opening {
+        font-size: 21px;
+
+        margin-bottom: 5px;
+    }
+
+
+    /* ==============================
+       TITLE
+    =============================== */
+
+    .letter-content h1 {
+        font-size:
+            clamp(28px, 8vw, 36px);
+
+        margin-bottom: 20px;
+    }
+
+
+    /* ==============================
+       TEXT
+    =============================== */
+
+    .letter-text {
+        font-size: 18px;
+
+        line-height: 1.65;
+    }
+
+    .letter-text p {
+        margin-bottom: 14px;
+    }
+
+
+    /* ==============================
+       ENDING
+    =============================== */
+
+    .letter-ending {
+        font-size: 18px;
+    }
+
+
+    /* ==============================
+       STICKER
+    =============================== */
+
+    .letter-sticker {
+        width: 90px;
+
+        right: 10px;
+
+        bottom: -60px;
+    }
+
+
+    /* ==============================
+       NEXT BUTTON
+    =============================== */
+
+    .page5-next {
+        right: 50%;
+
+        bottom: 20px;
+
+        transform: translateX(50%);
+
+        padding: 10px 24px;
+
+        font-size: 20px;
+    }
+
+    .page5-next:hover {
+        transform: translateX(50%) scale(1.05);
+    }
+}
