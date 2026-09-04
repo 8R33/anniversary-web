@@ -82,3 +82,13 @@ function goToPage4() {
 function goToPage5() {
     window.location.href = "page5.html";
 }
+
+/* ==================================================
+   PAGE 5 — NO BUTTON
+================================================== */
+
+
+function goToPage6() {
+    window.location.href = "page6.html";
+}
+
