@@ -787,7 +787,7 @@ h2 {
    MOBILE — RESPONSIVE COMPOSITION
 ================================================== */
 
-@media (max-width: 1000px) and (max-height: 800px) {
+@media (max-width: 1000px) and (max-height: 700px) {
 
     .year-page {
     min-height: 100svh;
@@ -803,7 +803,7 @@ h2 {
     display: grid;
 
     grid-template-columns: minmax(0, 1fr) 78px;
-    grid-template-rows: 380px auto;
+    grid-template-rows: 320px auto;
 
     column-gap: 3px;
     row-gap: 0;
@@ -820,7 +820,7 @@ h2 {
         grid-row: 1;
 
         width: min(100%, 235px);
-        height: 380px;
+        height: 320px;
 
         margin: 0 auto;
 
@@ -937,7 +937,7 @@ h2 {
     width: 100%;
 
     /* Move it up so it sits directly under the 1 */
-    margin-top: -30px;
+    margin-top: 10px;
 
     display: flex;
     flex-direction: column;
@@ -1005,7 +1005,7 @@ h2 {
         align-self: start;
         justify-self: end;
 
-        margin-top: 90px;
+        margin-top: 170px;
 
         padding: 11px 15px;
 
@@ -2635,7 +2635,7 @@ h2 {
 
 
 #messageInput::placeholder {
-    color: rgba(0, 0, 0, 0.75);
+    color: rgba(29, 27, 27, 0.842);
 }
 
 
