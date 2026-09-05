@@ -2197,7 +2197,7 @@ h2 {
         "Times New Roman",Times,serif;
 
     font-size:
-        clamp(32px, 5vw, 46px);
+        clamp(32px, 5vw, 60px);
 
     line-height: 1.1;
 
@@ -2449,5 +2449,417 @@ h2 {
 
     .page5-next:hover {
         transform: translateX(50%) scale(1.05);
+    }
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* ==================================================
+   PAGE 6 — ONE LAST THING
+================================================== */
+
+.page6 {
+    min-height: 100svh;
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    padding: 40px 20px;
+
+    color: #ffffff;
+}
+
+
+/* ------------------------------------------
+   BACKGROUND PHOTO
+------------------------------------------ */
+
+.final-background {
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        url("assets/images/Photo10-2.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    transform: scale(1.03);
+
+    z-index: 0;
+}
+
+
+/* ------------------------------------------
+   TEAL MIRROR GLASS
+------------------------------------------ */
+
+.teal-glass {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(20, 150, 146, 0.253),
+            rgba(30, 120, 125, 0.38)
+        );
+
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+
+    z-index: 1;
+}
+
+
+/* subtle glass reflection */
+
+.teal-glass::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -20%;
+
+    width: 70%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            110deg,
+            rgba(255,255,255,0.13),
+            transparent 55%
+        );
+
+    transform: skewX(-12deg);
+
+    pointer-events: none;
+}
+
+
+/* ------------------------------------------
+   MAIN GLASS CARD
+------------------------------------------ */
+
+.final-card {
+    position: relative;
+
+    z-index: 5;
+
+    width: min(90%, 600px);
+
+    padding: 45px 45px 50px;
+
+    text-align: center;
+
+    background:
+        rgba(200, 242, 255, 0.466);
+
+    border:
+        1px solid rgba(255,255,255,0.45);
+
+    border-radius: 30px;
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 20px 60px rgba(0,40,40,0.28);
+
+}
+
+
+/* ------------------------------------------
+   TEXT
+------------------------------------------ */
+
+.final-card h1 {
+    margin: 0 0 15px;
+
+    font-family:
+        "Times New Roman",Times,serif;
+
+    font-size: clamp(38px, 6vw, 52px);
+
+    line-height: 1.1;
+
+    color: #8f0a0a;
+}
+
+
+.final-message {
+    margin: 0 0 30px;
+
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+
+    color: #b30404;
+}
+
+
+/* ------------------------------------------
+   MESSAGE SECTION
+------------------------------------------ */
+
+
+
+#messageInput {
+    width: 100%;
+
+    min-height: 130px;
+
+    padding: 16px;
+
+    resize: vertical;
+
+    border: 1px solid
+        rgba(255,255,255,0.55);
+
+    border-radius: 18px;
+
+    outline: none;
+
+    background:
+        rgba(255, 207, 207, 0.308);
+
+    color: #000000;
+
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    box-sizing: border-box;
+}
+
+
+#messageInput::placeholder {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+
+#messageInput:focus {
+    background:
+        rgba(255,255,255,0.27);
+
+    border-color:
+        rgba(255,255,255,0.8);
+}
+
+
+/* ------------------------------------------
+   SEND BUTTON
+------------------------------------------ */
+
+.send-message {
+    margin-top: 15px;
+
+    border: none;
+
+    background: #8f0a0a;
+
+    color: white;
+
+    padding: 13px 28px;
+
+    border-radius: 50px;
+
+    font-family: inherit;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 18px rgba(60,20,20,0.25);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+
+.send-message:hover {
+    transform: scale(1.06);
+
+    box-shadow:
+        0 10px 25px rgba(60,20,20,0.35);
+}
+
+
+/* ------------------------------------------
+   SONG SECTION
+------------------------------------------ */
+
+.song-section {
+    margin-top: 35px;
+}
+
+
+.song-line {
+    width: 100%;
+
+    height: 1px;
+
+    margin-bottom: 25px;
+
+    background:
+        rgba(255,255,255,0.45);
+}
+
+
+.song-intro {
+    margin: 0 0 5px;
+
+    font-family: cursive;
+
+    font-size: 20px;
+
+    font-style: italic;
+
+    color: #000000;
+}
+
+
+
+/* ------------------------------------------
+   SONG BUTTON
+------------------------------------------ */
+
+.song-button {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    text-decoration: none;
+
+    background:
+        rgba(253, 0, 219, 0.247);
+
+    color: #8f0a0a;
+
+    border:
+        1px solid rgba(255,255,255,0.65);
+
+    padding: 12px 25px;
+
+    border-radius: 50px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    backdrop-filter: blur(5px);
+
+    transition:
+        transform .25s ease,
+        background .25s ease;
+}
+
+
+.song-button:hover {
+    transform: scale(1.06);
+
+    background:
+        rgba(255,255,255,0.35);
+}
+
+
+/* ==================================================
+   PAGE 6 — MOBILE
+================================================== */
+
+@media (max-width: 700px) {
+
+    .page6 {
+        min-height: 100svh;
+
+        padding: 25px 15px;
+
+        overflow-y: auto;
+    }
+
+
+    .final-background {
+        background-position: center;
+    }
+
+
+    .teal-glass {
+        background:
+            linear-gradient(
+                135deg,
+                rgba(20,150,145,0.52),
+                rgba(30,120,125,0.42)
+            );
+
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+
+
+    .final-card {
+        width: 92%;
+
+        padding: 32px 22px 35px;
+
+        border-radius: 24px;
+    }
+
+
+    .final-card h1 {
+        font-size: clamp(32px, 9vw, 40px);
+    }
+
+
+    .final-message {
+        font-size: 16px;
+
+        margin-bottom: 25px;
+    }
+
+
+    #messageInput {
+        min-height: 120px;
+
+        font-size: 15px;
+    }
+
+
+    .send-message {
+        font-size: 15px;
+
+        padding: 11px 23px;
+    }
+
+
+    .song-section {
+        margin-top: 30px;
+    }
+
+
+    .song-intro {
+        font-size: 16px;
+    }
+
+
+    .song-button {
+        font-size: 15px;
+
+        padding: 11px 21px;
     }
 }

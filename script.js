@@ -92,3 +92,29 @@ function goToPage6() {
     window.location.href = "page6.html";
 }
 
+
+
+/* ==================================================
+   PAGE 6 — NO BUTTON
+================================================== */
+
+function sendMessage() {
+
+    const message =
+        document.getElementById("messageInput").value.trim();
+
+    if (message === "") {
+        alert("Write something for me first ❤️");
+        return;
+    }
+
+    const phoneNumber = "254720457500";
+
+    const whatsappURL =
+        "https://wa.me/" +
+        phoneNumber +
+        "?text=" +
+        encodeURIComponent(message);
+
+    window.open(whatsappURL, "_blank");
+}
