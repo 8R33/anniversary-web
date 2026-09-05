@@ -2452,7 +2452,7 @@ h2 {
         linear-gradient(
             135deg,
             rgba(20, 150, 146, 0.253),
-            rgba(30, 120, 125, 0.38)
+            rgba(30, 120, 125, 0.26)
         );
 
     backdrop-filter: blur(2px);
@@ -2745,11 +2745,11 @@ h2 {
             linear-gradient(
                 135deg,
                 rgba(20,150,145,0.52),
-                rgba(30,120,125,0.42)
+                rgba(30, 120, 125, 0.288)
             );
 
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
     }
 
 
