@@ -822,7 +822,7 @@ h2 {
         width: 250;
         height: 340px;
 
-        margin-left: -30px;
+        margin-left: 0px;
         margin: 0 auto;
 
         position: relative;
@@ -875,9 +875,9 @@ h2 {
 
 
     .year-letters {
-        font-size: 42px;
+        font-size: 56px;
 
-        line-height: 1.05;
+        line-height: 1.50;
 
         letter-spacing: 0;
     }
@@ -938,7 +938,7 @@ h2 {
     width: 100%;
 
     /* Move it up so it sits directly under the 1 */
-    margin-top: 180px;
+    margin-top: 140px;
 
     display: flex;
     flex-direction: column;
@@ -969,12 +969,12 @@ h2 {
 
 
     .love-text h2 {
-        font-size: 26px;
+        font-size: 30px;
 
         line-height: 1.1;
         font-weight: bold;
 
-        margin-top: 1px;
+        margin-top: 0px;
 
         white-space: nowrap;
     }
@@ -985,10 +985,10 @@ h2 {
     ================================================== */
 
     .love-text .forever {
-        font-size: 24px;
+        font-size: 28px;
         font-weight: bold;
 
-        margin: 1px 0 0;
+        margin: 2px 0 0;
     }
 
 
@@ -1006,7 +1006,7 @@ h2 {
         align-self: start;
         justify-self: end;
 
-        margin-top: 350px;
+        margin-top: 360px;
 
         padding: 11px 15px;
 
