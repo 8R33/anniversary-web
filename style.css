@@ -803,7 +803,7 @@ h2 {
     display: grid;
 
     grid-template-columns: minmax(0, 1fr) 105px;
-    grid-template-rows: 340px auto;
+    grid-template-rows: 320px auto;
 
     column-gap: 0px;
     row-gap: 0;
@@ -820,7 +820,7 @@ h2 {
         grid-row: 1;
 
         width: 380px;
-        height: 340px;
+        height: 320px;
 
         margin: 0px;
         justify-self: start;
@@ -942,7 +942,7 @@ h2 {
     width: 240px;
 
     /* Move it up so it sits directly under the 1 */
-    margin-top: 170px;
+    margin-top: 190px;
     margin-bottom: 0;
 
     justify-self: start;
@@ -1012,7 +1012,8 @@ h2 {
         align-self: start;
         justify-self: end;
 
-        margin-top: 390px;
+        margin-top: 450px;
+        margin-bottom: 0;
 
         padding: 11px 15px;
 
