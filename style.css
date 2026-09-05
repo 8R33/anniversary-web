@@ -937,7 +937,7 @@ h2 {
     width: 100%;
 
     /* Move it up so it sits directly under the 1 */
-    margin-top: -60px;
+    margin-top: -30px;
 
     display: flex;
     flex-direction: column;
@@ -949,31 +949,20 @@ h2 {
     z-index: 5;
 }
 
-
     /* ==================================================
        INFINITY STICKER
     ================================================== */
 
-    .infinity-sticker {
-        width: 250px;
-        height: auto;
-
-        display: block;
-
-        opacity: 1;
-
-        filter: none;
-
-        margin: 0 auto 2px;
-    }
-
+.infinity-sticker {
+    display: none;
+}
 
     /* ==================================================
        BRIDGET & MUAYAD
     ================================================== */
 
    .love-text {
-    margin-left: 0;
+    margin-left: 0px;
     text-align: center;
 }
 
@@ -984,7 +973,7 @@ h2 {
         line-height: 1.1;
         font-weight: bold;
 
-        margin: 0;
+        margin-top: 1px;
 
         white-space: nowrap;
     }
@@ -1016,7 +1005,7 @@ h2 {
         align-self: start;
         justify-self: end;
 
-        margin-top: 80px;
+        margin-top: 90px;
 
         padding: 11px 15px;
 
@@ -2604,7 +2593,7 @@ h2 {
 
     font-size: 20px;
 
-    color: #b30404;
+    color: #cf0000;
 }
 
 
@@ -2631,7 +2620,7 @@ h2 {
     outline: none;
 
     background:
-        rgba(255, 207, 207, 0.308);
+        rgba(200, 233, 255, 0.308);
 
     color: #000000;
 
@@ -2652,7 +2641,7 @@ h2 {
 
 #messageInput:focus {
     background:
-        rgba(255,255,255,0.27);
+        rgba(161, 249, 255, 0.349);
 
     border-color:
         rgba(255,255,255,0.8);
@@ -2827,7 +2816,7 @@ h2 {
 
 
     .final-message {
-        font-size: 16px;
+        font-size: 18px;
 
         margin-bottom: 25px;
     }
@@ -2853,7 +2842,7 @@ h2 {
 
 
     .song-intro {
-        font-size: 16px;
+        font-size: 22px;
     }
 
 
