@@ -822,7 +822,7 @@ h2 {
         width: 250;
         height: 340px;
 
-        margin-left: 25;
+        margin-left: -30px;
         margin: 0 auto;
 
         position: relative;
@@ -938,14 +938,14 @@ h2 {
     width: 100%;
 
     /* Move it up so it sits directly under the 1 */
-    margin-top: -5px;
+    margin-top: 180px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 
-    text-align: center;
+    text-align: left;
 
     z-index: 5;
     }
@@ -1006,7 +1006,7 @@ h2 {
         align-self: start;
         justify-self: end;
 
-        margin-top: 150px;
+        margin-top: 350px;
 
         padding: 11px 15px;
 
