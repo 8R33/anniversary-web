@@ -803,7 +803,7 @@ h2 {
     display: grid;
 
     grid-template-columns: minmax(0, 1fr) 78px;
-    grid-template-rows: 320px auto;
+    grid-template-rows: 340px auto;
 
     column-gap: 3px;
     row-gap: 0;
@@ -820,7 +820,7 @@ h2 {
         grid-row: 1;
 
         width: min(100%, 235px);
-        height: 320px;
+        height: 340px;
 
         margin: 0 auto;
 
@@ -947,15 +947,15 @@ h2 {
     text-align: center;
 
     z-index: 5;
-}
+    }
 
     /* ==================================================
        INFINITY STICKER
     ================================================== */
 
-.infinity-sticker {
+    .infinity-sticker {
     display: none;
-}
+    }
 
     /* ==================================================
        BRIDGET & MUAYAD
@@ -964,7 +964,7 @@ h2 {
    .love-text {
     margin-left: 0px;
     text-align: center;
-}
+    }
 
 
     .love-text h2 {
