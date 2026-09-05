@@ -826,6 +826,8 @@ h2 {
         justify-self: start;
 
         position: relative;
+
+        transform: translateX(-65px);
     }
 
 
@@ -861,12 +863,12 @@ h2 {
     ================================================== */
 
     .year-text {
-        grid-column: 2;
+        grid-column: 1;
         grid-row: 1;
 
         position: static;
 
-        width: 100%;
+        width: 200%;
 
         margin-top: 25px;
 
