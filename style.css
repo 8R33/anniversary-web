@@ -2452,11 +2452,11 @@ h2 {
         linear-gradient(
             135deg,
             rgba(20, 150, 146, 0.253),
-            rgba(30, 120, 125, 0.26)
+            rgba(30, 120, 125, 0.342)
         );
 
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
 
     z-index: 1;
 }
