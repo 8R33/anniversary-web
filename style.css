@@ -802,8 +802,8 @@ h2 {
 
     display: grid;
 
-    grid-template-columns: minmax(0, 1fr) 90px;
-    grid-template-rows: 340px auto;
+    grid-template-columns: minmax(1, 1fr) 90px;
+    grid-template-rows: 320px auto;
 
     column-gap: 0px;
     row-gap: 0;
@@ -820,9 +820,9 @@ h2 {
         grid-row: 1;
 
         width: 250;
-        height: 340px;
+        height: 320px;
 
-        margin-left: 0px;
+        margin-left: -250px;
         margin: 0 auto;
 
         position: relative;
@@ -877,7 +877,7 @@ h2 {
     .year-letters {
         font-size: 56px;
 
-        line-height: 1.50;
+        line-height: 1.40;
 
         letter-spacing: 0;
     }
@@ -938,7 +938,7 @@ h2 {
     width: 100%;
 
     /* Move it up so it sits directly under the 1 */
-    margin-top: 140px;
+    margin-top: 170px;
 
     display: flex;
     flex-direction: column;
@@ -1006,7 +1006,7 @@ h2 {
         align-self: start;
         justify-self: end;
 
-        margin-top: 360px;
+        margin-top: 370px;
 
         padding: 11px 15px;
 
