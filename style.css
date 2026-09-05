@@ -2150,7 +2150,7 @@ h2 {
 
     font-family: cursive;
 
-    font-size: 30px;
+    font-size: 25px;
 
     font-style: italic;
 
@@ -2169,7 +2169,7 @@ h2 {
         "Times New Roman",Times,serif;
 
     font-size:
-        clamp(32px, 5vw, 60px);
+        clamp(30px, 5vw, 58px);
 
     line-height: 1.1;
 
@@ -2213,7 +2213,7 @@ h2 {
 
     font-family: cursive;
 
-    font-size: 30px;
+    font-size: 20px;
 
     font-style: italic;
 
@@ -2234,7 +2234,7 @@ h2 {
 
     right: 13px;
 
-    bottom: -75px;
+    bottom: -65px;
 
     z-index: 10;
 
@@ -2348,7 +2348,7 @@ h2 {
     =============================== */
 
     .letter-opening {
-        font-size: 21px;
+        font-size: 28px;
 
         margin-bottom: 5px;
     }
@@ -2386,7 +2386,7 @@ h2 {
     =============================== */
 
     .letter-ending {
-        font-size: 18px;
+        font-size: 28px;
     }
 
 
