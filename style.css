@@ -872,7 +872,7 @@ h2 {
 
         margin-top: 25px;
 
-        transform: translateX(-35px);
+        transform: translateX(-45px);
 
         text-align: center;
     }
@@ -900,7 +900,7 @@ h2 {
     .to-us {
         font-size: 20px;
 
-        margin-top: 15px;
+        margin-top: 25px;
 
         line-height: 1.1;
     }
