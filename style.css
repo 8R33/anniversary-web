@@ -1723,65 +1723,45 @@ h2 {
    CENTER FIREWORK
 ================================================== */
 
-.firework-section {
+.sticker-section {
     position: relative;
-
     z-index: 5;
 
     display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
     justify-content: center;
+    align-items: center;
 
     margin: 5px 0 10px;
 }
 
-.firework {
-    font-size: 60px;
+.you-me-sticker {
+    width: 160px;
+    height: auto;
 
-    line-height: 1;
+    display: block;
 
-    animation:
-        fireworkFloat 2.5s ease-in-out infinite;
+    filter: drop-shadow(0 6px 10px rgba(40, 60, 60, 0.15));
+
+    animation: stickerFloat 2.5s ease-in-out infinite;
 }
 
-.firework-text {
-    margin: 5px 0 0;
-
-    font-family: cursive;
-
-    font-size: 42px;
-    font-weight: bold;
-
-    font-style: italic;
-
-    color: #477d7a;
-}
 
 
 /* ==================================================
-   FIREWORK ANIMATION
+   STICKER ANIMATION
 ================================================== */
 
-@keyframes fireworkFloat {
+@keyframes stickerFloat {
 
     0%,
     100% {
-        transform:
-            translateY(0)
-            scale(1);
+        transform: translateY(0);
     }
 
     50% {
-        transform:
-            translateY(-2px)
-            scale(1.06);
+        transform: translateY(-5px);
     }
 }
-
 
 /* ==================================================
    COUPLE PHOTOS
@@ -1989,18 +1969,13 @@ h2 {
 
 
     /* ==============================
-       FIREWORK
+       YOU & ME STICKER
     =============================== */
 
-    .firework {
-        font-size: 42px;
+    .you-me-sticker {
+        width: 60px;
     }
 
-    .firework-text {
-        font-size: 30px;
-
-        margin-top: 2px;
-    }
 
 
     /* ==============================
